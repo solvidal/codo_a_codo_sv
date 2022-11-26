@@ -28,8 +28,8 @@ header {
 
 #divizq {float: left; 
          width: 70%;
-		 height:1500px;
-		 background-color: white;
+		 height:1600px;
+		 background-color: #f1f1f1;
 		 font-size: 20px;
 		 
 		 }
@@ -68,21 +68,21 @@ header {
 		 }
 		 
 
-/* barra de navegacion */
+/* barra de navegacion 
 nav {
     
     background-color: #333;
-
-}
-
-/* estilo links */
-nav a {
-   // float: left;
     display: block;
-    color: #f2f2f2;
-    text-align: center;
+}*/
+
+
+nav  {
+    float: center;
+    color: #f1f1f1;
+    text-align: left;
     padding: 14px 16px;
     text-decoration: none;
+    background-color: #333;
 }
 
 footer {
@@ -149,9 +149,9 @@ border-left:3px solid #c0c1c5;
 color:#797979;
 }
 
+/*@media (max-width: 767px)
 
-
-<a id="touch-menu" class="mobile-menu" href="#">Menu</a>
+<a id="touch-menu" class="mobile-menu" href=">Menu</a>
 
 .mobile-menu{display:none;
 width:100%;
@@ -165,7 +165,7 @@ font-weight:600;
 color:#ffffff;
 text-decoration:none;
 }
-
+*/
 /*@media (max-width: 767px)*/
 
 @media only screen and (max-width:620px) {

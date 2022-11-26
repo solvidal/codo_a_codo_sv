@@ -3,17 +3,18 @@
  <head>
 
 
- <meta http-equiv=�Content-Type� content=�text/html; charset=UTF-8? />
+ <meta http-equiv=Content-Type content=text/html; charset=UTF-8? />
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
  <link rel="stylesheet" type="text/css" href="Estilos/estilo1.css">
- <link rel="stylesheet" type="text/css" href="Estilos/estilocarrusel.css">
+ <!---link rel="stylesheet" type="text/css" href="Estilos/estilocarrusel.css"-->
+ <link rel="stylesheet" type="text/css" href="estilo2.css">
  
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 
-<script type="text/javascript" src="svscipts.js"></script>
+<!--script type="text/javascript" src="svscipts.js"></script-->
 
  
 
@@ -26,6 +27,9 @@
  <body>
 
 <div id=saludo class="sectionsaludo">
+  <script> 
+    document.getElementById("saludo").innerHTML = "Hola " + localStorage.getItem("usuario");
+</script>
 
 <div id="result">
 
@@ -46,7 +50,7 @@
    <li><a href="#">&#9776;</a>
    <ul class="sub-menu">
    <li><a href="#quehacer">Que hacer?</a></li>
-   <li><a href="#container">Info</a></li>
+   <li><a href="#carrusel">Info</a></li>
    <li><a href="#news">News</a></li>
    </ul>
    </li>
@@ -61,25 +65,29 @@
 <div class="row">
   <div class="column">
     <h2>La sagrada familia</h2>
-    <p>La Sagrada Familia es el icono indiscutible de Barcelona y la obra maestra de Antoni Gaud�. Se trata del monumento m�s visitado de la ciudad. Reconocible desde lejos por sus torres que se elevan hacia el cielo, cuenta con dos fachadas exteriores que impactan al visitante. Sin embargo, es en su interior donde se refleja la genialidad de Gaud�. En la actualidad la bas�lica se encuentra todav�a en construcci�n y su finalizaci�n est� prevista para el a�o 2026.</p>
+    <p>La Sagrada Familia es el icono indiscutible de Barcelona y la obra maestra de Antoni Gaudi. Se trata del monumento mas visitado de la ciudad. Reconocible desde lejos por sus torres que se elevan hacia el cielo, cuenta con dos fachadas exteriores que impactan al visitante. Sin embargo, es en su interior donde se refleja la genialidad de Gaudi. En la actualidad la basilica se encuentra todavia en construccion y su finalizacion esta prevista para el año 2026.</p>
+    <br>
     <img src = "Imagenes/sagrada_familia.jpg" WIDTH="200" HEIGHT="300" style="max-width:100%"> 
   </div>
 <div class="column">
     <h2>La Rambla</h2>
-    <p>La Rambla, tambi�n conocida como Las Ramblas, es una de las principales arterias de Barcelona y uno de los lugares m�s conocidos de la ciudad. Se trata de un agradable paseo de 1,3 kil�metros que conecta la Plaza de Catalu�a con el antiguo puerto de la ciudad.</p>
-    <br>
-    <br>
+    <p>La Rambla, tambien conocida como Las Ramblas, es una de las principales arterias de Barcelona y uno de los lugares mas conocidos de la ciudad. Se trata de un agradable paseo de 1,3 kilometros que conecta la Plaza de Cataluña con el antiguo puerto de la ciudad.</p>
     <br>
     <img src = "Imagenes/larambla.jpg" WIDTH="200" HEIGHT="300" style="max-width:100%"> 
   </div>
 <div class="column">
-    <h2>Barrio G�tico</h2>
-    <p>El Barrio G�tico (Barri G�tic) es, junto con Las Ramblas, uno de los lugares de visita imprescindible en Barcelona. Es el elemento central del distrito municipal de la Ciutat Vella, el casco antiguo de Barcelona, que constituye el mayor tesoro de edificios g�ticos de toda Europa. Un gran n�mero de bares, restaurantes y tiendas mantiene la zona en permanente animaci�n hasta bien entrada la noche.</p>
+    <h2>Barrio Gotico</h2>
+    <p>El Barrio Gotico (Barri Gotic) es, junto con Las Ramblas, uno de los lugares de visita imprescindible en Barcelona. Es el elemento central del distrito municipal de la Ciutat Vella, el casco antiguo de Barcelona, que constituye el mayor tesoro de edificios goticos de toda Europa. Un gran numero de bares, restaurantes y tiendas mantiene la zona en permanente animacion hasta bien entrada la noche.</p>
     <br>
     <img src = "Imagenes/barrio_gotico.jpg" WIDTH="200" HEIGHT="300" style="max-width:100%"> 
-	  <br>
-  <br>
-  <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
   </div>
 
 </div>
@@ -91,7 +99,6 @@
 
 <div id="divder">
 
- 
 <div=info_adicional>
 
 <h3 id="info"> Medios de transporte</h3>
@@ -124,7 +131,7 @@
 		 
 		  <tr>
             <td>L5</td>
-            <td>Cornell� Centre / Vall d'Hebron</td>
+            <td>Cornell Centre / Vall d'Hebron</td>
          </tr>
 		
 		 <tr>
@@ -134,7 +141,7 @@
 		 
 		  <tr>
             <td>L9s</td>
-            <td>Aeroport T1 / Zona Universit�ria</td>
+            <td>Aeroport T1 / Zona Universitaria</td>
          </tr>
 		 
 		  <tr>
@@ -149,12 +156,12 @@
 		 
 		   <tr>
             <td>L11</td>
-            <td>Trinitat Nova / Can Cui�s</td>
+            <td>Trinitat Nova / Can Cuis</td>
          </tr>
 		 
 		   <tr>
             <td>FM</td>
-            <td>Paral�lel / Parc de Montju�c</td>
+            <td>Paralulel / Parc de Montjuic</td>
          </tr>
 		 
 		 
@@ -165,11 +172,8 @@
 <p> <a href="https://www.tmb.cat/es/transporte-barcelona/mapa/metro">Link mapa del subte</a> </p> 
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
 
 <div id="news" class="sectionnews">
 
@@ -207,12 +211,12 @@ Pero Barcelona no es solo arte, sino que tambien posee soleadas playas combinada
 <br>
 
 
-<div class="slideshow-container">
+<!--div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
   <img src="Imagenes/parque_guell.jpg" style="width:70%">
-  <div class="text">Parque G�ell</div>
+  <div class="text">Parque Guell</div>
 </div>
 
 <div class="mySlides fade">
@@ -237,9 +241,25 @@ Pero Barcelona no es solo arte, sino que tambien posee soleadas playas combinada
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
+</div---->
+
+<!-- nuevo slider-->
 
 
+<div class="slider-container">  
+  <img
+    class="slider-item"
+    src="Imagenes/parque_guell.jpg"
+  />
+  <img
+    class="slider-item"
+    src="Imagenes/paseo_de_gracia.jpg"
+  />
+  <img
+    class="slider-item"
+    src="Imagenes/casa_batillo2.jpg"
+  />
+</div>  
 
 </section>
 
