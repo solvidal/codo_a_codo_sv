@@ -5,8 +5,9 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" type="text/css" href="estilo2.css">
  
- <script type="text/javascript" src="svscipts.js"></script>
+ <!--script type="text/javascript" src="svscipts.js"></script-->
 
+ <title>Bienvenidos</title>
 
 </head>
 
@@ -18,18 +19,72 @@
         <div id="caja" class="cajatexto">
            
 
-<form id="logueo" action ="home.html" method="post">
+
+<!--form id="logueo" action ="home.html" method="post"-->
+<form id="logueo">
 
 <p>Ingrese su usuario:</p><br>
 
 <input id="nombre" type="text" name="uname" value="">
 
-<p> Contraseña:</p><br>
+<p> ContraseÃ±a:</p><br>
 
-<input type="password" name="pass" value="">
+<input id="pass" type="text" name="pass" value="">
+
+<br>
+<br>
 <br>
 
-<input type="submit" Onclick="Guardar()" value="Enviar">
+<script>
+
+function ingresar() 
+{
+                   
+    localStorage.setItem("usuario", document.getElementById("nombre").value);
+               
+}
+
+
+function ventanaSecundaria ()
+{ 
+   
+   window.open('file:///C:/CodoaCodo/Proyecto/home.html'); 
+   
+   return false
+
+
+} 
+
+                
+function validar() 
+{
+                 
+    var doc = document.getElementById("pass").value;
+
+                   
+    if (doc.length != "8") 
+    {
+                       
+        alert("Ingrese un dni valido");
+                    
+    }
+
+                   
+    else {
+                      
+        ingresar();
+        ventanaSecundaria();
+                   
+    }
+                
+               
+               
+}
+
+</script>
+
+
+<input type="submit" onclick="validar()"  value="Ingresar">
 
 </form>
 
@@ -38,7 +93,9 @@
 </div>
 
 <div id="s1imagen">
+
  </div>
+
 
 </section>
 
